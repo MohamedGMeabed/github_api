@@ -1,0 +1,43 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Github Repositories",
+        "version": "0.2"
+    },
+    "paths": {
+        "/api/github-repositories": {
+            "get": {
+                "description": "Github Repositories",
+                "operationId": "184ba1927e28939db79ee9be438bd5e0",
+                "parameters": [
+                    {
+                        "name": "language",
+                        "in": "query",
+                        "description": "language",
+                        "required": false,
+                        "example": "php"
+                    },
+                    {
+                        "name": "date",
+                        "in": "query",
+                        "description": "date",
+                        "required": false,
+                        "example": "2020-01-01"
+                    },
+                    {
+                        "name": "per_page",
+                        "in": "query",
+                        "description": "Pagination Count",
+                        "required": false,
+                        "example": "10"
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Github Repositories"
+                    }
+                }
+            }
+        }
+    }
+}
